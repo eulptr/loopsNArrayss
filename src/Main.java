@@ -83,7 +83,11 @@ public class Main {
         System.out.println("Be balsiu:" + bebalsiu);
 
         System.out.println("<7 uzduotis>");
-
+        String episode = "Star Wars: Episode "+ " ".repeat((int) Math.random() * 10)+((int) (Math.random() * 7)+1) + " - A New Hope";
+        System.out.println(episode);
+     //   String episodeno = episode.repeat((int) Math.random() * 10)+((int) (Math.random() * 7)+1);
+     //   System.out.println("Episode number: " + episodeno);
+        System.out.println(episode.replaceAll("[a-z, A-Z, --, :, ]", ""));
 
 
 
