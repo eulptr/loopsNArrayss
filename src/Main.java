@@ -29,23 +29,37 @@ public class Main {
         System.out.println(name.toUpperCase());
         System.out.println(surname.toLowerCase());
 
+        String in = name.charAt(0) + "" + surname.charAt(0);
+        System.out.println(in); //3 uzduotis
 
-        System.out.print(name.charAt(0));
-        System.out.print(surname.charAt(0)); //nr3
+        String in1 = name.substring(0,1) + surname.substring(0,1);
+        System.out.println(in1); // 3 uzduotis 2 variantas
 
-        System.out.println(name.substring(1));
-        System.out.println(surname.substring(3));
+
+        System.out.println("<4 uzduotis>");
+        String a = "Liam";
+        String b = "Neeson";
+        int ilgis = a.length();
+        int ilgis2 = b.length();
+        String result = "";
+
+        if(a.length() < 3 ) {
+            result += a;
+        }else{
+            result += a.substring(a.length() -3);
+        }
+        if(b.length() < 3) {
+            result += b;
+        }else{
+            result += b.substring(b.length() -3);
+        }
+        System.out.println(result);
+
+        System.out.println("<5 uzduotis>");
 
         String aaip = "An American In Paris"; //5uzd
         System.out.println(aaip.replace("a", "*"));
-
-
-
-
-
-
-
-
+        System.out.println();
 
 
     }
