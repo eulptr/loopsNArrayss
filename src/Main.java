@@ -88,6 +88,7 @@ public class Main {
      //   String episodeno = episode.repeat((int) Math.random() * 10)+((int) (Math.random() * 7)+1);
      //   System.out.println("Episode number: " + episodeno);
         System.out.println(episode.replaceAll("[a-z, A-Z, --, :, ]", ""));
+        System.out.println(episode.replaceAll("[^\\d]", ""));
 
 
 
