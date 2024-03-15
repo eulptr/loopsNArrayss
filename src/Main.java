@@ -57,9 +57,34 @@ public class Main {
 
         System.out.println("<5 uzduotis>");
 
-        String aaip = "An American In Paris"; //5uzd
-        System.out.println(aaip.replace("a", "*"));
+        String aaip = "An American In Paris";
+        System.out.println(aaip.replaceAll("[a,A]", "*"));
         System.out.println();
+
+
+        System.out.println("<6 uzduotis>");
+        String balses = "An American in Paris";
+        String bebalsiu = "";
+        bebalsiu = balses.replaceAll ("[a,i,e,y,o]", "");
+        System.out.println("Be balsiu:" + bebalsiu);
+
+        balses = "Breakfast at Tiffany's";
+        bebalsiu = balses.replaceAll("[a, e, i, y, o, u]", "");
+        System.out.println("Be balsiu:" + bebalsiu);
+
+        balses = "2001: A Space Odyssey";
+        bebalsiu = "";
+        bebalsiu = balses.replaceAll("[a, e,i,y, o, u]", "");
+        System.out.println("Be balsiu:" + bebalsiu);
+
+        balses = "It's a Wonderful Life";
+        bebalsiu = "";
+        bebalsiu = balses.replaceAll("[a, e, i, y, o, u]", "");
+        System.out.println("Be balsiu:" + bebalsiu);
+
+        System.out.println("<7 uzduotis>");
+
+
 
 
     }
